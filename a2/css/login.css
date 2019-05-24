@@ -1,0 +1,132 @@
+.logininfo{
+ width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 60%;
+    left: 25%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+    border: 2px solid white;
+}
+.info{
+	padding: .5px;
+}
+.logininfo h1{
+    margin: 0;
+    padding: 0 0 60px;
+    text-align: center;
+    font-size: 22px;
+}
+.logininfo p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.logininfo input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.logininfo input[type="email"], input[type="password"]
+{
+    border: none;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.logininfo input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background: -webkit-gradient(linear,left top,right top,from(#c9373f),to(#930f5b));
+    font-size: 18px;
+    border-radius: 20px;
+}
+.logininfo input[type="submit"]:hover
+{
+    cursor: pointer;
+}
+.logininfo a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.logininfo a:hover
+{
+    color: #ffc107;
+}
+
+
+.background{
+height: 1250px;
+    background-image: url("../../../media/RT Background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+}
+
+
+
+
+.form-group {
+  position:relative;  
+  padding 35px;
+  & + .form-group {
+    margin-top: 30px;
+  }
+}
+
+.form-label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #fff;
+  z-index: 10;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+}
+
+.focused .form-label {
+  transform: translateY(-125%);
+  font-size: 1em;
+}
+
+.form-input {
+  position: relative;
+  padding: 12px 0px 5px 0;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  box-shadow: 0 1px 0 0 #e5e5e5;
+  transition: box-shadow 150ms ease-out;
+  
+  &:focus {
+    box-shadow: 0 2px 0 0 blue;
+  }
+}
+.form-input.filled {
+  box-shadow: 0 2px 0 0 lightgreen;
+}
+
+.form-input.incorrect {
+  box-shadow: 0 2px 0 0 red;
+}
+
+
+nav.loginnav{
+    margin-bottom: 0px;
+}
+
+
+
+

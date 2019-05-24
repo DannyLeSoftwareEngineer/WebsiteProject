@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <!-- meta http-equiv="X-Frame-Options" content="deny" -->
+    <title>My First Webpage</title>
+
+    <!-- We will cover style later. Skip down to the body tag -->
+    <link id='wireframecss' type="text/css" rel="stylesheet" href="wireframe.css"/>
+    <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css" disabled>
+    <script src='wireframe.js'></script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <!-- Image sourced from www.rmit.edu.au for educational purposes only -->
+      <div><img src='../media/RMIT-Logo.png' alt='RMIT University logo' height=80 />Danny le
+      </div>
+    </header>
+
+    <nav>
+      Assignments:
+      <!-- link locations: relative to current directory -->
+      <ul>
+        <li><a href="a2/index.php" target="_blank">A2</a></li>
+        <li><a href="a3/index.php" target="_blank">A3</a></li>
+      </ul> |
+      <!-- link locations: relative to e54061's root web directory -->
+      <a href="/~e54061/wp/lectures" target="_blank">Lectures 0 - 11</a> |
+      <a href="/~e54061/secure" target="_blank">Secure Resources Area</a> | 
+      <!-- link location: absolute -->
+      <a href='' target="_blank">WP Public</a>
+    </nav>
+
+    <main>
+      <article id='about-me'>
+        <h2>About me</h2>
+        <p>
+          <img src='../media/200CyberFrey.png' width='200' alt='my photo' />
+        </p>
+        <details open>
+          <summary>read more ...</summary>
+            <table id="more-about-me">
+              <tr>
+                <th>Have you any programming or web design experience?</th>
+                <td>No, other than creating random games in visual basic in my Year 12 Software Development class because when your IT department blocks reddit you have to find other things to do to waste time.</td>
+              </tr>
+              <tr>
+                <th>Do you see yourself as a programmer or designer, or both?</th>
+                <td>Well I like to see myself as a programmer and my OCD thinks its a designer, so both?</td>
+              </tr>
+              <tr>
+                <th>What has brought you to this course at RMIT?</th>
+                <td>Well robots are basically going to replace most jobs right? So might as well have the irreplaceable job of programming them. Unless they can program themselves. But they can't right? Oh no.</td>
+              </tr>
+              <tr>
+                <th>What are you hoping to get out of the course?</th>
+                <td>It ranges between creating awesome software that can have a positive effect on the world or just straight up ruling the world, the possibilities are endless. But most likely getting a job. </td>
+              </tr>
+              <tr>
+                <th>Assignments allow for individual or paried work. What strengths do you have and what strengths would you like your assignment partner to have?</th>
+                <td>My strength is that I do my work and I want my partner's strength to be that they do their work. Yeah i couldn't come up with anything witty or funny and last semester group assignments were.......something.</td>
+              </tr>
+              <tr>
+                <th>What websites do you use the most? (NB: "family friendly" !)</th>
+                <td>reddit.com</td>
+              </tr>
+              <tr>
+                <th>Do you have any interests or hobbies?</th>
+                <td>Yes I have plenty of interests or hobbies</td>
+              </tr>
+            </table>
+        </details>
+      </article>
+     </main>
+
+    <footer>
+      &copy; Danny le
+      <script>
+        document.write(new Date().getFullYear());
+      </script>.
+      Put footer info and other <a href=' '>secondary links</a> here (but only if you wish to). <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
+    </footer>
+    
+  </body>
+</html>

@@ -1,0 +1,485 @@
+/* Styles the Rooster Teeth logo on every page */
+img.logo {
+     display: block;
+     margin-left: auto;
+     margin-right: auto 
+}
+/* Styles the heading of each pages, the heading of the footer and the font of the content*/
+ h1{
+     font-family: 'Raleway';
+     margin-left:  5%;
+}
+ h2 {
+     color: #AC214E;
+     background-image: linear-gradient(transparent 19px,#c9373f 4px,#930f5b 21px,transparent 9px);
+     margin: 0px;
+}
+ h2 span {
+     background-color: #efefef;
+}
+ main{
+     font-family: "Open Sans", sans-serif;
+}
+/* Styles the navigation of each page in accordance to the LOVE HATE rule*/
+ nav {
+     border:1px solid #ccc;
+     border-width:1px 0;
+     margin: auto;
+     flex-wrap: wrap;
+     text-align: center;
+     font-family: "Oswald", sans-serif;
+     margin-bottom: 35px;
+     margin-top: 25px;
+     transition: .5s;
+     background-image: linear-gradient(#ffffff 50%,#f6f6f6 100%);
+}
+ nav a:link, a:visited{
+     color: black;
+     padding: 10px;
+     min-width: 70px;
+     font-weight: normal;
+     height: 40px;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     line-height: 40px;
+}
+ nav a:hover, a:active{
+     color: #dd0000;
+     font-weight:600;
+}
+
+/* Styles the div of text and the text of the index page to ensure proper spacing and ensures the content alignment with the heading
+    as well as styling the slideshow container and its transitions and timing. Also styles the blockquote and the accompanying image */
+#Content p{
+   margin-bottom: 15px;
+}
+ div.founders{
+     margin: auto;
+     width: 40%;
+     background-color: white;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     margin-bottom: 25px;
+}
+ div.container {
+     height: 75px;
+     text-align: center;
+     padding: 10px 20px;
+     overflow:hidden;
+}
+ #History{
+     margin: 75px 150px 75px;
+     margin-left:  5%;
+}
+ #Content{
+     margin-bottom: 12px;
+}
+ blockquote{
+     font-style: italic;
+     margin-top: 10px;
+     padding-left : 15px;
+     border-left: 3px solid #ccc;
+}
+ .bqimage{
+     margin-left: 40px;
+     border:1px solid;
+}
+
+ .mySlides {
+    display: none;
+}
+ .autoslideshow-container {
+     max-width: 1000px;
+     position: relative;
+     margin: auto;
+}
+ .singleslide{
+     width: 100%;
+}
+ .fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 3s;
+     animation-name: fade;
+     animation-duration: 3s;
+}
+ @-webkit-keyframes fade {
+     from {
+        opacity: .5
+    }
+     to {
+        opacity: 1
+    }
+}
+ @keyframes fade {
+     from {
+        opacity: .5
+    }
+     to {
+        opacity: 1
+    }
+}
+
+/* Styles the footer for every page as well as the social media logos in the footer*/
+
+footer {
+     right: 0;
+     bottom: 0;
+     left: 0;
+     padding: 2px;
+     background-color: #efefef;
+     text-align: center;
+}
+
+ #socialmedia{
+     width:30px;
+     height:30px;
+     -webkit-filter: grayscale(100%);
+     filter: grayscale(100%);
+     padding-left: 10px;
+}
+ #socialmedia:hover{
+     filter: none;
+}
+
+/* Styles the links of the products*/
+ .column a:link, a:visited{
+     color: black;
+}
+ .column a:hover, a:active{
+     color: #dd0000;
+}
+
+/* Styles and postions the tags on the upper left corner of the products*/
+ .containerp {
+     position: relative;
+}
+ .sale {
+     background-color: white;
+     color:red;
+     border-style: solid;
+     border-color: red;
+     border-width: 1px;
+     position: absolute;
+     padding: 2px;
+     top: 0px;
+     left: 0px;
+}
+ .new {
+     background-color: #446de9;
+     color:white;
+     border-style: solid;
+     border-color: white;
+     border-width: 1px;
+     position: absolute;
+     padding: 2px;
+     top: 0px;
+     left: 0px;
+}
+/* Styles, postions and sizes the product images giving them a distinct hover effect and styles the product text under it*/
+ .row {
+     margin-left: 5%;
+     margin-right: 5%;
+     display: flex;
+}
+ .column {
+     width:70%;
+     flex: 33.33%;
+     padding: 10px;
+     margin-top: 20px;
+     margin-bottom: 35px;
+     border: 1px solid transparent;
+}
+ .productimage{
+     width:100%;
+}
+ .column:hover{
+     border: 1px solid gray;
+}
+ .desc{
+     text-align: center;
+}
+ .descAnime{
+     font-weight: bold;
+     text-align: center;
+}
+
+/* Sytles the login box to ensure all the elements are spaced and not overlapping, the text is white, the cursor changes on hover of input types,
+   that the log in button is coloured with a gradient and positions the login box off center to complementthe background image */
+ .logininfo{
+     width: 320px;
+     height: 420px;
+     background: #000;
+     color: #fff;
+     top: 60%;
+     left: 25%;
+     position: absolute;
+     transform: translate(-50%,-50%);
+     box-sizing: border-box;
+     padding: 50px 30px;
+     border: 2px solid white;
+}
+ .info{
+     padding: .5px;
+}
+ .logininfo h1{
+     margin: 0;
+     padding: 0 0 60px;
+     text-align: center;
+     font-size: 22px;
+}
+ .logininfo p{
+     margin: 0;
+     padding: 0;
+     font-weight: bold;
+}
+ .logininfo input{
+     width: 100%;
+     margin-bottom: 20px;
+}
+ .logininfo input[type="email"], input[type="password"] {
+     border: none;
+     background: transparent;
+     outline: none;
+     height: 40px;
+     color: #fff;
+     font-size: 16px;
+}
+ .logininfo input[type="submit"] {
+     border: none;
+     outline: none;
+     height: 40px;
+     color: #fff;
+     background: -webkit-gradient(linear,left top,right top,from(#c9373f),to(#930f5b));
+     font-size: 18px;
+     border-radius: 20px;
+}
+ .logininfo input[type="submit"]:hover {
+     cursor: pointer;
+}
+ .logininfo a{
+     text-decoration: none;
+     font-size: 12px;
+     line-height: 20px;
+     color: darkgrey;
+}
+ .logininfo a:hover {
+     color: #ffc107;
+}
+
+/*Styles the background image so that the aspect ratio is kept and any empty space is filled in with black*/
+ .background{
+     height: 1250px;
+     background-image: url("../../../media/RT Background.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-color: black;
+}
+
+/*Styles form label and other styles are called into effect once the user has interacted with the form to change the postion of the lable
+  and change the colour of the box shadow*/
+ .form-group {
+     position:relative;
+     padding 35px;
+     & + .form-group {
+         margin-top: 30px;
+    }
+}
+ .form-label {
+     position: absolute;
+     left: 0;
+     top: 10px;
+     color: #fff;
+     z-index: 10;
+     transition: transform 150ms ease-out, font-size 150ms ease-out;
+}
+ .focused .form-label {
+     transform: translateY(-125%);
+     font-size: 1em;
+}
+ .form-input {
+     position: relative;
+     padding: 12px 0px 5px 0;
+     width: 100%;
+     outline: 0;
+     border: 0;
+     box-shadow: 0 1px 0 0 #e5e5e5;
+     transition: box-shadow 150ms ease-out;
+     &:focus {
+         box-shadow: 0 2px 0 0 blue;
+    }
+}
+ .form-input.filled {
+     box-shadow: 0 2px 0 0 lightgreen;
+}
+ .form-input.incorrect {
+     box-shadow: 0 2px 0 0 red;
+}
+ nav.loginnav{
+     margin-bottom: 0px;
+}
+
+/* Styles the 2 columns divs and the row div to size and position the product page*/
+ .singleproductrow{
+     margin-left: 5%;
+     margin-right: 5%;
+     display: flex;
+     flex-wrap: nowrap;
+     margin-bottom: 35px;
+}
+ .singleproductcolumn{
+     width:50%;
+}
+
+/* Gives the collapsiable element a darker background colour when extended by a click and surrounds it in a solid border. Also styles the content of the
+   collapsible element to give it presences to the page*/
+ .collapsible {
+     background-color: #777;
+     color: white;
+     cursor: pointer;
+     padding: 18px;
+     width: 100%;
+     border: none;
+     text-align: left;
+     outline: none;
+     font-size: 15px;
+}
+ .active, .collapsible:hover {
+     background-color: #555;
+}
+ .content {
+     padding: 0 18px;
+     display: none;
+     overflow: hidden;
+     background-color: #f1f1f1;
+}
+
+/*Styles the two buttons and text field in the same manner to give it a uniformed look, while giving the "add to cart* button a more
+  distinct look to emphasise its presence*/
+ #plus, #minus, #count{
+     background-color: white;
+     border-style: solid;
+     border-width: 1px;
+     color: gray;
+     padding: 10px 25px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     cursor: pointer;
+}
+ #cart{
+     height: 48px;
+     line-height: 48px;
+     width: 100%;
+     background: -webkit-gradient(linear,left top,right top,from(#c9373f),to(#930f5b));
+     text-transform: uppercase;
+     font-size: 18px;
+     border-radius: 20px;
+     color: #fff;
+}
+
+/* Styles the product description in a simple format*/
+ label.producttype{
+     font-weight: bold;
+     padding-right: 30px;
+}
+ label.productvendor{
+     font-weight: bold;
+     padding-right: 80px;
+}
+
+/* Styles the radio buttons to look like pressable buttons. When pressed the border in darken to indicate the selected button*/
+ .boxed label {
+     display: inline-block;
+     width: 30px;
+     padding: 10px;
+     border: solid 2px #ccc;
+     margin: 3px;
+     transition: all 0.3s;
+}
+ .boxed input[type="radio"] {
+     display: none;
+}
+ .boxed input[type="radio"]:checked + label {
+     border: solid 2px black;
+}
+
+/* Styles the manual slideshow and the arrows and numbers to change the slides and indicate the number of the slide*/
+ img {
+    vertical-align: middle;
+}
+ .slideshow-container {
+     width: 95%;
+     max-width: 1000px;
+     position: relative;
+     margin-bottom: 10px;
+}
+ .prev, .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     padding: 16px;
+     margin-top: -22px;
+     color: white;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+}
+ .next {
+     right: 0;
+     border-radius: 3px 0 0 3px;
+}
+ .prev:hover, .next:hover {
+     background-color: rgba(0,0,0,0.8);
+}
+ .text {
+     color: #f2f2f2;
+     font-size: 15px;
+     padding: 8px 12px;
+     position: absolute;
+     bottom: 8px;
+     width: 100%;
+     text-align: center;
+}
+ .numbertext {
+     color: #777;
+     font-size: 12px;
+     padding: 8px 12px;
+     position: absolute;
+     top: 0;
+}
+ .thumbnailcontainer {
+     text-align: center;
+     padding-right: 10%;
+}
+ .thumbnail {
+     width:10%;	
+     cursor: pointer;
+     margin: 0 2px;
+     border:2px solid transparent;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+}
+ .active{
+     border:2px solid #021a40;
+}
+ @media only screen and (max-width: 300px) {
+     .prev, .next,.text {
+        font-size: 11px
+    }
+}
+
+/* Styles the error message upon a false from the form validation and the price of the product*/
+ #error{
+     padding-left: 70px;
+     color: red;
+     display: none;
+}
+ #price{
+     font-size: 24px;
+     font-weight:700;
+}
+ 

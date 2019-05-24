@@ -1,0 +1,178 @@
+.row {
+	margin-left: 5%;
+	margin-right: 5%;
+    	display: flex;
+	flex-wrap: nowrap;
+	margin-bottom: 35px;
+}
+.column{
+	width:50%;
+}
+
+.productimage{
+	width:100%;
+}
+
+
+/*Collapsible*/
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;	
+}
+
+
+
+#plus, #minus, #count{
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    color: gray;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#cart{
+    height: 48px;
+    line-height: 48px;
+    width: 100%;
+    background: -webkit-gradient(linear,left top,right top,from(#c9373f),to(#930f5b));
+    text-color: white;		
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 20px;	
+    color: #fff;			
+}
+
+
+/*Type and Vendor*/
+label{
+	 font-weight: bold;
+	 padding-right: 30px;
+}
+
+/*Radio buttons*/
+.boxed label {
+  display: inline-block;
+  width: 30px;
+  padding: 10px;
+  border: solid 2px #ccc;
+  margin: 3px;
+  transition: all 0.3s;
+}
+.boxed input[type="radio"] {
+  display: none;
+}
+.boxed input[type="radio"]:checked + label {
+  border: solid 2px black;
+}
+
+
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin-bottom: 10px;
+ 
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  margin: 0 2px;	
+  border:2px solid transparent;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active{
+  border:2px solid #021a40;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+#error{
+	padding-left: 70px;
+	color: red;
+	display: none;
+}
+#price{
+	font-size: 24px;
+	font-weight:700;
+}
+
